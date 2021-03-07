@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  jupyter:
+    image: jupyter/scipy-notebook
+    ports:
+      - "8888:8888"
+    environment:
+      NB_USER: abry
+    volumes:
+      - ./work:/home/abry/work
